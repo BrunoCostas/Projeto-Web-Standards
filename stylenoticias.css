@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+html{
+  background-image: url(Imagens/background.png);
+}
+header .logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img{
+  width: 150px;
+}
+main .foto img{
+  margin: auto;
+  text-align: center;
+  display: block;
+  height: 450px;
+  padding: 50px 0 50px 0;
+}
+.titulo h1{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  background-color: black;
+}
+.texto h2{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+  background-color: black;
+}
+.texto h4{
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 40px;
+  font-size: 25px;
+  background-color: black;
+  width: 30%;
+}
+.texto p{
+  color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 40px;
+  font-size: 20px;
+  background-color: black;
+  line-height: 1.5rem;
+}
+body .inicio{
+  display: block;
+  text-align: center;
+}
+footer {
+  color: white;
+  margin:30px;
+}
+main .news1 li{
+  background-image: url(Imagens/csgosource2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+  width: 740px;
+  padding: 50px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+main .news2 li{
+  background-image: url(Imagens/residentevil.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 330px;
+  max-width: 740px;
+  padding: 50px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+main .news3 li{
+  background-image: url(Imagens/lol.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 330px;
+  max-width: 740px;
+  padding: 50px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+main .news4 li{
+  background-image: url(Imagens/overwatch4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 330px;
+  max-width: 740px;
+  padding: 50px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+main .news5 li{
+  background-image: url(Imagens/forza.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+  width: 740px;
+  padding: 50px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+main .news6 li{
+  background-image: url(Imagens/zelda5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 330px;
+  width: 740px;
+  padding: 50px;
+  margin: auto;
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+main .news a{
+  color: white;
+  text-decoration: none;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+main .news a:hover{
+  color: blueviolet;
+  border-radius: 7px;
+  font-weight: bold;
+}
+main .retorno a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 43%;
+}
+main .retorno a:hover{
+  color: blueviolet;
+  font-weight: bold;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+   
+   <head>
+      <meta charset="utf-8">
+      <title>Login</title>
+      <link rel="stylesheet" href="stylelogin.css">
+   </head>
+
+   <header>
+      <div class="logo">
+       <a href="Home.html">
+         <img src="Imagens/gamestart.png" alt="Games Start" title="Games Start">
+       </a>
+     </div>
+   </header>
+
+   <body>
+      
+      <div class="main">
+         <div class="title">
+            Login
+         </div>
+         <form name="form1" method="post" action="verificarlogin.jsp">
+            <div class="field">
+               <input type="text" name="txtEmail" required placeholder="Email">
+            </div>
+            <div class="field">
+               <input type="password" name="txtSenha" required placeholder="Senha">
+            </div>
+            <div class="content"></div>
+            <div class="field">
+               <input type="submit" value="Entrar" id="login">
+            </div>
+            <div class="signup-link">
+               Não tem uma conta? <a href="Cadastro.html">Cadastre-se</a>
+            </div>
+         </form>
+      </div>
+
+      <footer>
+         <p>Site fictício desenvolvido por alunos para fins acadêmicos.</p> 
+      </footer>
+   </body>
+</html>

@@ -1,0 +1,91 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Cadastro</title>
+      <link rel="stylesheet" href="stylecadastro.css">
+      <style>
+       span{
+         color: red;
+       }
+      </style>
+   </head>
+
+   <header>
+      <div class="logo">
+         <a href="Home.html">
+            <img src="Imagens/gamestart.png" alt="Games Start" title="Games Start">
+         </a>
+      </div>
+   </header>
+
+   <body>
+      <div class="main">
+         <div class="title">
+          Cadastro
+         </div>
+         <form id="form" name="form" method="post" action="Grava.jsp">
+            <div class="field">
+               <input type="text" name="txtNome" placeholder="Nome">
+               <span id="erroNome"></span>
+            </div>
+               <br> 
+            <div class="field">
+               <input type="text" name="txtUser" placeholder="Usuário">
+               <span id="erroUser"></span>
+            </div>
+            <br>
+            <div class="field">
+               <input type="text" name="txtEmail" pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/"  placeholder="Email">
+               <span id="erroEmail"></span>
+            </div>
+            <br>
+            <div class="field">
+               <input type="password" name="txtSenha" placeholder="Senha">
+               <span id="erroSenha"></span>
+            </div>
+            <br>
+            <div class="field">
+               <input type="button" value="Cadastrar" onclick="verificar()">
+            </div>
+            <div class="signup-link">
+               Já possui uma conta? <a href="Login.html">Entrar</a>
+            </div>
+         </form>
+      </div>
+         <footer>
+            <p>Site fictício desenvolvido por alunos para fins acadêmicos.</p> 
+         </footer>
+
+      <script>
+         function verificar()
+         {
+            var ok = true;
+            var n = document.form.txtNome.value;
+            if( n.length < 3  ){
+               ok = false;
+               document.querySelector('#erroNome').textContent = "O nome deve ter no mínimo 3 caracteres";
+            }
+            var u = document.form.txtUser.value;
+            if( u.length < 4  ){
+               ok = false;
+               document.querySelector('#erroUser').textContent = "O usuário deve ter no mínimo 4 caracteres";
+            }
+            var e = document.form.txtEmail.value;
+            if(  e.indexOf( "@" ) < 0 ){ 
+               ok = false;
+               document.querySelector('#erroEmail').textContent = "Digite um email válido";
+            }
+            var s = document.form.txtSenha.value;
+            if( s.length < 8  ){
+               ok = false;
+               document.querySelector('#erroSenha').textContent = "Digite um senha com no mínimo 8 caracteres";
+            }
+            if(ok){
+               document.form.submit();
+            }
+         } 
+      </script>
+   </body>
+</html>
